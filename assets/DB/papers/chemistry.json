@@ -1,0 +1,247 @@
+{
+    "id": "ppr002",
+    "title": "Chemistry",
+    "image_url": "",
+    "Description": "Basic Chemistry Multiple Choice Questions (MCQ) to practice basic Chemistry quiz answers",
+    "time_seconds": 1100,
+    "questions": [
+        {
+            "id": "ppr002q001",
+            "question": "What is the chemical symbol for carbon?",
+            "answers": [
+                {"identifier": "A", "Answer": "C"},
+                {"identifier": "B", "Answer": "Ca"},
+                {"identifier": "C", "Answer": "Cn"},
+                {"identifier": "D", "Answer": "Crn"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q002",
+            "question": "Molecules bonded together make up atoms.",
+            "answers": [
+                {"identifier": "A", "Answer": "True"},
+                {"identifier": "B", "Answer": "False"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q003",
+            "question": "When we combined vinegar and baking soda and created carbon dioxide what was the product?",
+            "answers": [
+                {"identifier": "A", "Answer": "vinegar"},
+                {"identifier": "B", "Answer": "carbon dioxide and baking soda"},
+                {"identifier": "C", "Answer": "carbon dioxide"},
+                {"identifier": "D", "Answer": "vinegar and baking soda"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr002q004",
+            "question": "Which of the following is a unit of electric current?",
+            "answers": [
+                {"identifier": "A", "Answer": "ohm"},
+                {"identifier": "B", "Answer": "volt"},
+                {"identifier": "C", "Answer": "watt"},
+                {"identifier": "D", "Answer": "amp"}
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr002q005",
+            "question": "In a chemical reaction or change a new substance is not created.",
+            "answers": [
+                {"identifier": "A", "Answer": "true"},
+                {"identifier": "B", "Answer": "false"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q006",
+            "question": "What is the primary gas found in the air we breathe?",
+            "answers": [
+                {"identifier": "A", "Answer": "Oxygen"},
+                {"identifier": "B", "Answer": "Nitrogen"},
+                {"identifier": "C", "Answer": "Carbon Dioxide"},
+                {"identifier": "D", "Answer": "Hydrogen"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q007",
+            "question": "Which particle has a negative charge?",
+            "answers": [
+                {"identifier": "A", "Answer": "Proton"},
+                {"identifier": "B", "Answer": "Neutron"},
+                {"identifier": "C", "Answer": "Electron"},
+                {"identifier": "D", "Answer": "Nucleus"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr002q008",
+            "question": "What is the pH level of pure water?",
+            "answers": [
+                {"identifier": "A", "Answer": "5"},
+                {"identifier": "B", "Answer": "7"},
+                {"identifier": "C", "Answer": "9"},
+                {"identifier": "D", "Answer": "10"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q009",
+            "question": "Which element is commonly used in batteries?",
+            "answers": [
+                {"identifier": "A", "Answer": "Lithium"},
+                {"identifier": "B", "Answer": "Gold"},
+                {"identifier": "C", "Answer": "Silver"},
+                {"identifier": "D", "Answer": "Copper"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q010",
+            "question": "What is the term for a substance that speeds up a chemical reaction?",
+            "answers": [
+                {"identifier": "A", "Answer": "Catalyst"},
+                {"identifier": "B", "Answer": "Reagent"},
+                {"identifier": "C", "Answer": "Solvent"},
+                {"identifier": "D", "Answer": "Product"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q011",
+            "question": "Which of the following is a noble gas?",
+            "answers": [
+                {"identifier": "A", "Answer": "Oxygen"},
+                {"identifier": "B", "Answer": "Helium"},
+                {"identifier": "C", "Answer": "Hydrogen"},
+                {"identifier": "D", "Answer": "Nitrogen"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q012",
+            "question": "What is the most abundant element in the universe?",
+            "answers": [
+                {"identifier": "A", "Answer": "Oxygen"},
+                {"identifier": "B", "Answer": "Carbon"},
+                {"identifier": "C", "Answer": "Hydrogen"},
+                {"identifier": "D", "Answer": "Helium"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr002q013",
+            "question": "What is the formula for table salt?",
+            "answers": [
+                {"identifier": "A", "Answer": "NaCl"},
+                {"identifier": "B", "Answer": "KCl"},
+                {"identifier": "C", "Answer": "MgCl2"},
+                {"identifier": "D", "Answer": "CaCl2"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q014",
+            "question": "Which of these is a common acid?",
+            "answers": [
+                {"identifier": "A", "Answer": "Sodium Bicarbonate"},
+                {"identifier": "B", "Answer": "Hydrochloric Acid"},
+                {"identifier": "C", "Answer": "Sodium Chloride"},
+                {"identifier": "D", "Answer": "Calcium Carbonate"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q015",
+            "question": "Which of the following represents a chemical reaction?",
+            "answers": [
+                {"identifier": "A", "Answer": "H2 + O2 -> H2O"},
+                {"identifier": "B", "Answer": "H2O"},
+                {"identifier": "C", "Answer": "Na + Cl"},
+                {"identifier": "D", "Answer": "C + O -> CO2"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q016",
+            "question": "What is the process of a liquid turning into a gas called?",
+            "answers": [
+                {"identifier": "A", "Answer": "Condensation"},
+                {"identifier": "B", "Answer": "Evaporation"},
+                {"identifier": "C", "Answer": "Sublimation"},
+                {"identifier": "D", "Answer": "Freezing"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q017",
+            "question": "What is the term for the amount of matter in an object?",
+            "answers": [
+                {"identifier": "A", "Answer": "Mass"},
+                {"identifier": "B", "Answer": "Weight"},
+                {"identifier": "C", "Answer": "Volume"},
+                {"identifier": "D", "Answer": "Density"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q018",
+            "question": "Which of the following is a diatomic molecule?",
+            "answers": [
+                {"identifier": "A", "Answer": "O2"},
+                {"identifier": "B", "Answer": "CO2"},
+                {"identifier": "C", "Answer": "H2O"},
+                {"identifier": "D", "Answer": "NaCl"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q019",
+            "question": "What is the main component of the Earth's atmosphere?",
+            "answers": [
+                {"identifier": "A", "Answer": "Oxygen"},
+                {"identifier": "B", "Answer": "Argon"},
+                {"identifier": "C", "Answer": "Nitrogen"},
+                {"identifier": "D", "Answer": "Carbon Dioxide"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr002q020",
+            "question": "What type of bond involves the sharing of electron pairs between atoms?",
+            "answers": [
+                {"identifier": "A", "Answer": "Ionic Bond"},
+                {"identifier": "B", "Answer": "Covalent Bond"},
+                {"identifier": "C", "Answer": "Metallic Bond"},
+                {"identifier": "D", "Answer": "Hydrogen Bond"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr002q021",
+            "question": "What is the process by which plants make their food?",
+            "answers": [
+                {"identifier": "A", "Answer": "Photosynthesis"},
+                {"identifier": "B", "Answer": "Respiration"},
+                {"identifier": "C", "Answer": "Transpiration"},
+                {"identifier": "D", "Answer": "Fermentation"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr002q022",
+            "question": "Which gas is produced during photosynthesis?",
+            "answers": [
+                {"identifier": "A", "Answer": "Oxygen"},
+                {"identifier": "B", "Answer": "Carbon Dioxide"},
+                {"identifier": "C", "Answer": "Nitrogen"},
+                {"identifier": "D", "Answer": "Hydrogen"}
+            ],
+            "correct_answer": "A"
+        }
+    ]
+}

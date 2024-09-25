@@ -1,0 +1,305 @@
+{
+    "id": "ppr004",
+    "title": "Biology",
+    "image_url": "",
+    "Description": "Basic Biology Multiple Choice Questions (MCQ) to practice basic Biology quiz answers",
+    "time_seconds": 1000,
+    "questions": [
+        {
+            "id": "ppr004q001",
+            "question": "A relationship in which one animal hunts, kills and eats another",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Symbiosis"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Mutualism"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Parasitism"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Predation"
+                }
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr004q002",
+            "question": "The animal that is hunted and killed for food.",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Decomposer"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Predator"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Scavenger"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Prey"
+                }
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr004q003",
+            "question": "A close relationship between two different species of organisms living together.",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Mutualism"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Symbiosis"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Competition"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Commensalism"
+                }
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr004q004",
+            "question": "A symbiotic relationship in which both species benefit.",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Mutualism"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Commensalism"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Parasitism"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Predation"
+                }
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr004q005",
+            "question": "Which organelle is found in most plants, some bacteria and some protists?",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Ribosomes"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Mitochondria"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Endoplasmic reticulum"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Chloroplasts"
+                }
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr004q006",
+            "question": "What process do plants use to convert sunlight into food?",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Photosynthesis"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Respiration"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Fermentation"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Transpiration"
+                }
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr004q007",
+            "question": "Which of the following is NOT a type of connective tissue?",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Blood"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Bone"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Muscle"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Cartilage"
+                }
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr004q008",
+            "question": "What is the basic unit of life?",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Tissue"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Organ"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Cell"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Organism"
+                }
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr004q009",
+            "question": "What part of the cell contains the genetic material?",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Cytoplasm"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Nucleus"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Ribosomes"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Mitochondria"
+                }
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr004q010",
+            "question": "Which vitamin is primarily produced when exposed to sunlight?",
+            "answers": [
+                {
+                    "identifier": "A",
+                    "Answer": "Vitamin A"
+                },
+                {
+                    "identifier": "B",
+                    "Answer": "Vitamin B12"
+                },
+                {
+                    "identifier": "C",
+                    "Answer": "Vitamin C"
+                },
+                {
+                    "identifier": "D",
+                    "Answer": "Vitamin D"
+                }
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr004q011",
+            "question": "What is the primary function of the ribosome?",
+            "answers": [
+                {"identifier": "A", "Answer": "DNA replication"},
+                {"identifier": "B", "Answer": "Protein synthesis"},
+                {"identifier": "C", "Answer": "Energy production"},
+                {"identifier": "D", "Answer": "Cell division"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr004q012",
+            "question": "Which type of blood cell is responsible for carrying oxygen?",
+            "answers": [
+                {"identifier": "A", "Answer": "White blood cell"},
+                {"identifier": "B", "Answer": "Platelet"},
+                {"identifier": "C", "Answer": "Red blood cell"},
+                {"identifier": "D", "Answer": "Plasma"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr004q013",
+            "question": "What is the main function of chlorophyll in plants?",
+            "answers": [
+                {"identifier": "A", "Answer": "Absorb sunlight"},
+                {"identifier": "B", "Answer": "Store energy"},
+                {"identifier": "C", "Answer": "Transport nutrients"},
+                {"identifier": "D", "Answer": "Support cell structure"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr004q014",
+            "question": "What part of the plant is responsible for water absorption?",
+            "answers": [
+                {"identifier": "A", "Answer": "Stem"},
+                {"identifier": "B", "Answer": "Leaves"},
+                {"identifier": "C", "Answer": "Roots"},
+                {"identifier": "D", "Answer": "Flowers"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr004q015",
+            "question": "Which structure controls the entry and exit of substances in a cell?",
+            "answers": [
+                {"identifier": "A", "Answer": "Cell wall"},
+                {"identifier": "B", "Answer": "Nucleus"},
+                {"identifier": "C", "Answer": "Cell membrane"},
+                {"identifier": "D", "Answer": "Cytoplasm"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr004q016",
+            "question": "What is the primary role of enzymes in biological reactions?",
+            "answers": [
+                {"identifier": "A", "Answer": "Increase temperature"},
+                {"identifier": "B", "Answer": "Act as catalysts"},
+                {"identifier": "C", "Answer": "Provide energy"},
+                {"identifier": "D", "Answer": "Decompose waste"}
+            ],
+            "correct_answer": "B"
+        }
+    ]
+}

@@ -1,0 +1,251 @@
+{
+    "id": "ppr003",
+    "title": "Maths",
+    "image_url": "",
+    "Description": "Basic Maths Multiple Choice Questions (MCQ) to practice basic Maths quiz answers",
+    "time_seconds": 1200,
+    "questions": [
+        {
+            "id": "ppr003q001",
+            "question": "Jenna has 82 apples. She gives Sam 28 apples. How many apples does Jenna have now?",
+            "answers": [
+                {"identifier": "A", "Answer": "45"},
+                {"identifier": "B", "Answer": "108"},
+                {"identifier": "C", "Answer": "54"},
+                {"identifier": "D", "Answer": "37"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr003q002",
+            "question": "Max and Billy went to a farm! Max collected 18 eggs and Billy collected 29 eggs. How many eggs did they collect in total?",
+            "answers": [
+                {"identifier": "A", "Answer": "74"},
+                {"identifier": "B", "Answer": "22"},
+                {"identifier": "C", "Answer": "80"},
+                {"identifier": "D", "Answer": "47"}
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr003q003",
+            "question": "What is 2/10 + 15/100 equal?",
+            "answers": [
+                {"identifier": "A", "Answer": "17"},
+                {"identifier": "B", "Answer": "35/100"},
+                {"identifier": "C", "Answer": "30/100"},
+                {"identifier": "D", "Answer": "17/100"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q004",
+            "question": "How many times greater is 2,340 than 234?",
+            "answers": [
+                {"identifier": "A", "Answer": "20 times"},
+                {"identifier": "B", "Answer": "100 times"},
+                {"identifier": "C", "Answer": "10 times"},
+                {"identifier": "D", "Answer": "1 time"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr003q005",
+            "question": "How many sides does a quadrilateral have?",
+            "answers": [
+                {"identifier": "A", "Answer": "5"},
+                {"identifier": "B", "Answer": "3"},
+                {"identifier": "C", "Answer": "2"},
+                {"identifier": "D", "Answer": "4"}
+            ],
+            "correct_answer": "D"
+        },
+        {
+            "id": "ppr003q006",
+            "question": "What is the next prime number after 5?",
+            "answers": [
+                {"identifier": "A", "Answer": "6"},
+                {"identifier": "B", "Answer": "7"},
+                {"identifier": "C", "Answer": "8"},
+                {"identifier": "D", "Answer": "9"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q007",
+            "question": "What is the square of 9?",
+            "answers": [
+                {"identifier": "A", "Answer": "18"},
+                {"identifier": "B", "Answer": "27"},
+                {"identifier": "C", "Answer": "81"},
+                {"identifier": "D", "Answer": "72"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr003q008",
+            "question": "If a triangle has angles of 60 and 70 degrees, what is the measure of the third angle?",
+            "answers": [
+                {"identifier": "A", "Answer": "50"},
+                {"identifier": "B", "Answer": "60"},
+                {"identifier": "C", "Answer": "70"},
+                {"identifier": "D", "Answer": "80"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q009",
+            "question": "What is 15% of 200?",
+            "answers": [
+                {"identifier": "A", "Answer": "20"},
+                {"identifier": "B", "Answer": "30"},
+                {"identifier": "C", "Answer": "25"},
+                {"identifier": "D", "Answer": "35"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q010",
+            "question": "What is the least common multiple of 4 and 5?",
+            "answers": [
+                {"identifier": "A", "Answer": "15"},
+                {"identifier": "B", "Answer": "20"},
+                {"identifier": "C", "Answer": "10"},
+                {"identifier": "D", "Answer": "25"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q011",
+            "question": "What is the value of π (pi) to two decimal places?",
+            "answers": [
+                {"identifier": "A", "Answer": "3.12"},
+                {"identifier": "B", "Answer": "3.14"},
+                {"identifier": "C", "Answer": "3.16"},
+                {"identifier": "D", "Answer": "3.18"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q012",
+            "question": "If x + 5 = 12, what is x?",
+            "answers": [
+                {"identifier": "A", "Answer": "5"},
+                {"identifier": "B", "Answer": "7"},
+                {"identifier": "C", "Answer": "8"},
+                {"identifier": "D", "Answer": "10"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q013",
+            "question": "What is 8 multiplied by 7?",
+            "answers": [
+                {"identifier": "A", "Answer": "54"},
+                {"identifier": "B", "Answer": "56"},
+                {"identifier": "C", "Answer": "64"},
+                {"identifier": "D", "Answer": "48"}
+            ],
+            "correct_answer": "B"
+        },
+        {
+            "id": "ppr003q014",
+            "question": "How many degrees are in a right angle?",
+            "answers": [
+                {"identifier": "A", "Answer": "90"},
+                {"identifier": "B", "Answer": "45"},
+                {"identifier": "C", "Answer": "60"},
+                {"identifier": "D", "Answer": "180"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q015",
+            "question": "What is the perimeter of a rectangle with length 5 and width 3?",
+            "answers": [
+                {"identifier": "A", "Answer": "16"},
+                {"identifier": "B", "Answer": "15"},
+                {"identifier": "C", "Answer": "18"},
+                {"identifier": "D", "Answer": "14"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q016",
+            "question": "What is the area of a triangle with a base of 10 and a height of 5?",
+            "answers": [
+                {"identifier": "A", "Answer": "25"},
+                {"identifier": "B", "Answer": "30"},
+                {"identifier": "C", "Answer": "50"},
+                {"identifier": "D", "Answer": "15"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q017",
+            "question": "If 5x = 25, what is the value of x?",
+            "answers": [
+                {"identifier": "A", "Answer": "5"},
+                {"identifier": "B", "Answer": "10"},
+                {"identifier": "C", "Answer": "15"},
+                {"identifier": "D", "Answer": "20"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q018",
+            "question": "What is the product of 6 and 9?",
+            "answers": [
+                {"identifier": "A", "Answer": "54"},
+                {"identifier": "B", "Answer": "63"},
+                {"identifier": "C", "Answer": "72"},
+                {"identifier": "D", "Answer": "81"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q019",
+            "question": "Which of the following is a prime number?",
+            "answers": [
+                {"identifier": "A", "Answer": "21"},
+                {"identifier": "B", "Answer": "22"},
+                {"identifier": "C", "Answer": "23"},
+                {"identifier": "D", "Answer": "24"}
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "id": "ppr003q020",
+            "question": "What is 100 divided by 4?",
+            "answers": [
+                {"identifier": "A", "Answer": "25"},
+                {"identifier": "B", "Answer": "20"},
+                {"identifier": "C", "Answer": "30"},
+                {"identifier": "D", "Answer": "35"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q021",
+            "question": "What is the sum of the angles in a triangle?",
+            "answers": [
+                {"identifier": "A", "Answer": "180 degrees"},
+                {"identifier": "B", "Answer": "360 degrees"},
+                {"identifier": "C", "Answer": "90 degrees"},
+                {"identifier": "D", "Answer": "270 degrees"}
+            ],
+            "correct_answer": "A"
+        },
+        {
+            "id": "ppr003q022",
+            "question": "What is the value of 7 squared?",
+            "answers": [
+                {"identifier": "A", "Answer": "49"},
+                {"identifier": "B", "Answer": "56"},
+                {"identifier": "C", "Answer": "42"},
+                {"identifier": "D", "Answer": "36"}
+            ],
+            "correct_answer": "A"
+        }
+    ]
+}
