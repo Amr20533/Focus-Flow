@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "462380245979",
+    "firebase_url": "https://focusflow-cbe66-default-rtdb.firebaseio.com",
+    "project_id": "focusflow-cbe66",
+    "storage_bucket": "focusflow-cbe66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462380245979:android:cb0111c150010ba4827dfe",
+        "android_client_info": {
+          "package_name": "com.example.focus_flow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS49ctyQqXUbJfFcT3xzg_rbY8nCrf8aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

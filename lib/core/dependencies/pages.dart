@@ -1,4 +1,5 @@
 import 'package:focus_flow/Layouts/views/main/home_layout.dart';
+import 'package:focus_flow/Layouts/views/main/question_paper_screen.dart';
 import 'package:focus_flow/Layouts/views/splash/intro_screen.dart';
 import 'package:focus_flow/Layouts/views/splash/splash_screen.dart';
 import 'package:focus_flow/core/controllers/question_papers/question_paper_controller.dart';
@@ -15,5 +16,10 @@ List<GetPage<dynamic>> pages = [
         binding: BindingsBuilder((){
           Get.put(QuestionPaperController());
         })
-    )
+    ),
+    GetPage(name: AppRoutes.questionScreen, page: () => QuestionPaperScreen(),
+        binding: BindingsBuilder((){
+          Get.put(QuestionPaperController());
+        })
+    ),
   ];

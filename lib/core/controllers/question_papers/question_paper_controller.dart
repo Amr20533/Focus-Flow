@@ -1,12 +1,15 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:focus_flow/core/controllers/auth_controller.dart';
 import 'package:focus_flow/core/dependencies/firebase_ref.dart';
 import 'package:focus_flow/core/services/firebase_storage_service.dart';
 import 'package:focus_flow/models/question_paper_model.dart';
+import 'package:focus_flow/utils/static/routes.dart';
 import 'package:get/get.dart';
 
 class QuestionPaperController extends GetxController{
+
   final paperImage = <String>[].obs;
   final papers = <QuestionPaperModel>[].obs;
   final allQuestions = <Questions>[].obs;
@@ -137,6 +140,21 @@ class QuestionPaperController extends GetxController{
     QuerySnapshot<Map<String, dynamic>> data = await questionPaperRF.where("questions", isNull: true).get();
     for (var doc in data.docs) {
       debugPrint("Document without questions: ${doc.id}");
+    }
+  }
+
+
+  void navigateToQuestion({required QuestionPaperModel paperModel, bool tryAgain = false}){
+    AuthController _authController = Get.find();
+    if(_authController.isLoggedIn){
+      if(tryAgain){
+        Get.back();
+
+      }else{
+        Get.toNamed(AppRoutes.questionScreen, arguments: paperModel);
+      }
+    }else{
+      _authController.showLoginAlertDialogue();
     }
   }
 
