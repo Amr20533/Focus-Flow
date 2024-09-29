@@ -146,7 +146,7 @@ class QuestionPaperController extends GetxController{
 
   void navigateToQuestion({required QuestionPaperModel paperModel, bool tryAgain = false}){
     AuthController _authController = Get.find();
-    if(_authController.isLoggedIn){
+    if(_authController.isLoggedIn()){
       if(tryAgain){
         Get.back();
 
@@ -154,6 +154,7 @@ class QuestionPaperController extends GetxController{
         Get.toNamed(AppRoutes.questionScreen, arguments: paperModel);
       }
     }else{
+      debugPrint("Title--> ${paperModel.title}");
       _authController.showLoginAlertDialogue();
     }
   }

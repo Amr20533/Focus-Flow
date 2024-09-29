@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:focus_flow/Layouts/views/main/shimmer_loading_screen.dart';
+import 'package:focus_flow/Layouts/widgets/shimmer_loading_screen.dart';
 import 'package:focus_flow/Layouts/widgets/background_view.dart';
 import 'package:focus_flow/core/controllers/question_papers/question_paper_controller.dart';
 import 'package:focus_flow/core/controllers/question_papers/questions_controller.dart';

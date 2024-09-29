@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:focus_flow/core/controllers/home/zoom_controller.dart';
 import 'package:focus_flow/utils/static/app_assets.dart';
 import 'package:focus_flow/utils/static/app_dimensions.dart';
 import 'package:get/get.dart';
 
-class HomeHeader extends StatelessWidget {
+class HomeHeader extends GetView<HomeZoomController> {
   const HomeHeader({
     super.key,
   });
@@ -17,7 +18,10 @@ class HomeHeader extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.only(top: AppDimensions.getWidth(28)),
-            child: IconButton(onPressed: (){},
+            child: IconButton(
+              onPressed: (){
+                controller.toggleDrawer();
+            },
               icon: SvgPicture.asset(AppAssets.menuLeft, color: Colors.white,width: AppDimensions.getWidth(16),height: AppDimensions.getHeight(16),),),
           ),
           Padding(
