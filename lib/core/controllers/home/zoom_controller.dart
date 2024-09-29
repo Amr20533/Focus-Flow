@@ -1,3 +1,5 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:focus_flow/core/controllers/auth_controller.dart';
 import 'package:get/get.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -5,6 +7,8 @@ import 'package:url_launcher/url_launcher.dart';
 class HomeZoomController extends GetxController{
 
   final ZoomDrawerController zoomDrawerController = ZoomDrawerController();
+  Rxn<User?> user = Rxn();
+
 
   void toggleDrawer(){
     zoomDrawerController.toggle?.call();
@@ -12,8 +16,7 @@ class HomeZoomController extends GetxController{
   }
 
   void webSite(){
-    zoomDrawerController.toggle?.call();
-    update();
+
   }
 
   void signIn(){
@@ -36,5 +39,11 @@ class HomeZoomController extends GetxController{
     }else{
       launchUrl(uri);
     }
+  }
+
+  @override
+  void onReady() {
+    user.value = Get.find<AuthController>().getUser();
+    super.onReady();
   }
 }

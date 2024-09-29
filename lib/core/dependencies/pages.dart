@@ -1,3 +1,4 @@
+import 'package:focus_flow/Layouts/views/auth/login_screen.dart';
 import 'package:focus_flow/Layouts/views/main/home_layout.dart';
 import 'package:focus_flow/Layouts/views/main/question_paper_screen.dart';
 import 'package:focus_flow/Layouts/views/splash/intro_screen.dart';
@@ -22,4 +23,9 @@ List<GetPage<dynamic>> pages = [
           Get.put(QuestionPaperController());
         })
     ),
-  ];
+
+  ///Auth
+  GetPage(name: AppRoutes.login, page: () => const LoginScreen()),
+
+
+];

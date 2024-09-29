@@ -4,6 +4,9 @@ class AppRoutes{
   static const String home = '/home';
   static const String questionScreen = "/question-screen";
 
+  ///Auth
+  static const String login = "/login";
+
 
 
 }

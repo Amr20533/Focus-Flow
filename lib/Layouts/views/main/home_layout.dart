@@ -23,13 +23,25 @@ class HomeLayout extends GetView<HomeZoomController> {
             gradient: mainGradient(context),
             ),
           ),
+          Positioned(
+              top: AppDimensions.getHeight(40),
+              right: AppDimensions.getWidth(40),
+              child: IconButton(
+                onPressed: () {
+                  controller.toggleDrawer();
+                },
+                icon: const Icon(Icons.arrow_back_ios),
+                color: Colors.white,
+                iconSize: AppDimensions.getWidth(20),
+              )
+          ),
           ZoomDrawer(
               controller: controller.zoomDrawerController,
               borderRadius: 50,
               // showShadow: true,
               angle: 0.0,
               style: DrawerStyle.defaultStyle,
-              slideWidth: AppDimensions.screenWidth * 0.4,
+              slideWidth: AppDimensions.getWidth(250),
               // drawerShadowsBackgroundColor: Colors.white.withOpacity(0.5),
               menuScreen: const MenuLayout(),
               mainScreen:Container(

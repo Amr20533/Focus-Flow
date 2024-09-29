@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:focus_flow/Layouts/widgets/home/trophy_box.dart';
 import 'package:focus_flow/constants.dart';
@@ -40,12 +41,30 @@ class HomeTopicCard extends GetView<QuestionPaperController> {
                   Container(
                     width: AppDimensions.getWidth(70),
                     height: AppDimensions.getWidth(70),
-                    margin: EdgeInsets.symmetric(horizontal: AppDimensions.getWidth(8), vertical: AppDimensions.getHeight(8)),
+                    margin: EdgeInsets.symmetric(
+                      horizontal: AppDimensions.getWidth(8),
+                      vertical: AppDimensions.getHeight(8),
+                    ),
                     decoration: BoxDecoration(
-                      image: DecorationImage(image: NetworkImage(image)),
                       borderRadius: BorderRadius.circular(AppDimensions.getWidth(16)),
-                      color: Theme.of(context).primaryColor.withOpacity(0.2),
-
+                      color: Colors.white,
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(AppDimensions.getWidth(16)),
+                      child: CachedNetworkImage(
+                        imageUrl: image,
+                        placeholder: (context, url) => Container(
+                          color: Colors.white,
+                          child: Center(
+                            child: CircularProgressIndicator(color: Theme.of(context).primaryColor,),
+                          ),
+                        ),
+                        errorWidget: (context, url, error) => Container(
+                          color: Colors.white,
+                          child: const Icon(Icons.error, color: Colors.red),
+                        ),
+                        fit: BoxFit.cover, // Adjust as needed
+                      ),
                     ),
                   ),
                   Padding(

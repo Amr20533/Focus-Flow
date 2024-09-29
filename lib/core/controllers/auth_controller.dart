@@ -1,13 +1,16 @@
+import 'package:flutter/material.dart';
 import 'package:focus_flow/Layouts/widgets/dialogues/alert_dialogue.dart';
 import 'package:focus_flow/core/dependencies/firebase_ref.dart';
+import 'package:focus_flow/utils/static/routes.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:logger/logger.dart' as logger;
+import 'package:logger/logger.dart';
 
 
 class AuthController extends GetxController{
 
+  final Logger _logger = Logger();
 
   final _user = Rxn<User>();
   late Stream<User?> _authStateChanges;
@@ -38,8 +41,9 @@ class AuthController extends GetxController{
           await _auth.signInWithCredential(_credential);
           await saveUser(_googleSignInAcc);
         }
-    }on Exception catch(error){
-      // logger.e(error);
+    }catch(error){
+      debugPrint("Error while sign in with google account");
+      _logger.e("Sign in error: $error");
     }
 
   }
@@ -60,8 +64,8 @@ class AuthController extends GetxController{
   void showLoginAlertDialogue(){
     Get.dialog(Dialogues.questionStartDialogue(
       onPressed: (){
-          Get.back();
-          ///Navigate to login page
+          // Get.back();
+          navigateToLogin();
     }),
     barrierDismissible: false
     );
@@ -71,9 +75,21 @@ class AuthController extends GetxController{
   bool isLoggedIn(){
     return _auth.currentUser != null;
   }
+
+  void navigateToLogin(){
+    Get.toNamed(AppRoutes.login);
+  }
+
+  User? getUser() {
+    _user.value = _auth.currentUser;
+    debugPrint("I'm --> ${_user.value}");
+    return _user.value;
+  }
+
   @override
   void onReady(){
     initAuth();
+    // getUser();
     super.onReady();
   }
 }
