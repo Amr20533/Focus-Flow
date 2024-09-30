@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:focus_flow/core/controllers/auth_controller.dart';
 import 'package:get/get.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
@@ -16,14 +17,18 @@ class HomeZoomController extends GetxController{
   }
 
   void webSite(){
+    _launch(Uri.parse('https://eg.linkedin.com/in/amr-elnemr-094b8a30a'));
+  }
 
+  void github(){
+    _launch(Uri.parse('https://github.com/Amr20533'));
   }
 
   void signIn(){
 
   }
-  void signOut(){
-
+  void logOut(){
+    Get.find<AuthController>().logOut();
   }
 
   void mail(){
@@ -43,7 +48,18 @@ class HomeZoomController extends GetxController{
 
   @override
   void onReady() {
-    user.value = Get.find<AuthController>().getUser();
+    final authController = Get.find<AuthController>();
+
+    // Ensure AuthController is initialized
+    authController.initAuth(); // Make sure this is called before accessing user
+
+    user.value = authController.getUser();
+
+    if (user.value == null) {
+      debugPrint("No user is currently signed in.");
+    } else {
+      debugPrint("Current user: ${user.value!.displayName}");
+    }
     super.onReady();
   }
 }

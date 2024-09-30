@@ -10,9 +10,12 @@ import 'package:get/get.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options:DefaultFirebaseOptions.currentPlatform
-  );
+  try {
+    await Firebase.initializeApp();
+    print("Firebase initialized successfully.");
+  } catch (e) {
+    print("Firebase initialization error: $e");
+  }
   InitBinding().dependencies();
   runApp(const MyApp());
 }
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return GetMaterialApp(
-      locale: const Locale("ja"),
+      locale: const Locale("du"),
       title: 'Focus Flow',
       debugShowCheckedModeBanner: false,
       translations: AppTranslations(),

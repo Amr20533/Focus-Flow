@@ -42,7 +42,7 @@ class HomeLayout extends GetView<HomeZoomController> {
               angle: 0.0,
               style: DrawerStyle.defaultStyle,
               slideWidth: AppDimensions.getWidth(250),
-              // drawerShadowsBackgroundColor: Colors.white.withOpacity(0.5),
+              // menuBackgroundColor: Colors.white.withOpacity(0.2),
               menuScreen: const MenuLayout(),
               mainScreen:Container(
                 decoration: BoxDecoration(

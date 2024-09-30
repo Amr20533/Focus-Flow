@@ -5,5 +5,22 @@ Map<String,String> tr = {
   "want-learn": "Bugün ne öğrenmek istiyorsun?",
   "min": "dakika",
   "questions": "Sorular",
-  "answers": "Cevaplar"
+  "answers": "Cevaplar",
+  "sign-in": "Google ile giriş yap",
+  "logout": "Çıkış yap",
+  "web": "Web sitesi",
+  "email": "E-posta",
+  "git": "Github",
+  "settings": "Ayarlar",
+  "lang": "Uygulama Dili",
+  "ar": "Arapça",
+  "sp": "İspanyolca",
+  "du": "Almanca",
+  "ja": "Japonca",
+  "fr": "Fransızca",
+  "en": "İngilizce",
+  "app-mode": "Karanlık Mod",
+  "profile": "Profil",
+  "explore": "Tüm kurs materyallerine parmaklarınızın ucundan erişin. Öğrenme yolculuğunuz için ihtiyaç duyduğunuz her şeyi keşfetmekte tam özgürlüğün tadını çıkarın!"
+
 };

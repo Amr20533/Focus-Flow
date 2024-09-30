@@ -11,8 +11,8 @@ class InitBinding implements Bindings{
     // Get.put(UploadingData());
     Get.put(ThemeController());
     Get.put(HomeZoomController());
-    Get.put(QuestionsController());
+    // Get.put(QuestionsController());
     Get.lazyPut(() => FirebaseStorageService());
-    Get.put(AuthController(),permanent: true);
+    Get.put(AuthController(),);
   }
 }

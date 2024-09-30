@@ -16,36 +16,53 @@ class AuthController extends GetxController{
   late Stream<User?> _authStateChanges;
   late FirebaseAuth _auth;
 
-  void initAuth() async{
-    await Future.delayed(const Duration(seconds: 2));
+  @override
+  void onReady(){
+    super.onReady();
+    initAuth();
+  }
+
+  Future<void> initAuth() async{
     _auth = FirebaseAuth.instance;
     _authStateChanges = _auth.authStateChanges();
-    _authStateChanges.listen((User? user){
-      _user.value = user;
+    _authStateChanges.listen((User? user) {
+      _user.value = user!;
     });
+    await Future.delayed(const Duration(seconds: 2));
     navigateToIntro();
   }
+
   void navigateToIntro(){
-    Get.offAllNamed("/intro");
+    Get.offAllNamed(AppRoutes.onBoarding);
   }
-  signInWithGoogle() async{
+
+  Future<void> signInWithGoogle() async {
     final GoogleSignIn _googleSignIn = GoogleSignIn();
-    try{
-        GoogleSignInAccount? _googleSignInAcc = await _googleSignIn.signIn();
-        if(_googleSignInAcc != null){
-          final _authAcc = await  _googleSignInAcc.authentication;
-          final _credential = GoogleAuthProvider.credential(
-            idToken: _authAcc.idToken,
-            accessToken: _authAcc.accessToken,
-          );
-          await _auth.signInWithCredential(_credential);
-          await saveUser(_googleSignInAcc);
-        }
-    }catch(error){
-      debugPrint("Error while sign in with google account");
+
+    try {
+      // Start the Google sign-in process
+      GoogleSignInAccount? _googleSignInAcc = await _googleSignIn.signIn();
+
+      // Check if the user completed the sign-in
+      if (_googleSignInAcc != null) {
+        final _authAcc = await _googleSignInAcc.authentication;
+
+        // Create the credential for Firebase
+        final _credential = GoogleAuthProvider.credential(
+          idToken: _authAcc.idToken,
+          accessToken: _authAcc.accessToken,
+        );
+
+        await _auth.signInWithCredential(_credential);
+        await saveUser(_googleSignInAcc);
+        navigateToHome();
+      } else {
+        debugPrint("Google sign-in was cancelled.");
+      }
+    } catch (error) {
+      debugPrint("Error while signing in with Google: $error");
       _logger.e("Sign in error: $error");
     }
-
   }
 
   saveUser(GoogleSignInAccount account){
@@ -73,6 +90,7 @@ class AuthController extends GetxController{
   }
 
   bool isLoggedIn(){
+    // debugPrint("User ----> ${_auth!.currentUser}");
     return _auth.currentUser != null;
   }
 
@@ -80,16 +98,28 @@ class AuthController extends GetxController{
     Get.toNamed(AppRoutes.login);
   }
 
-  User? getUser() {
-    _user.value = _auth.currentUser;
-    debugPrint("I'm --> ${_user.value}");
-    return _user.value;
+  void navigateToHome(){
+    Get.toNamed(AppRoutes.home);
   }
 
-  @override
-  void onReady(){
-    initAuth();
-    // getUser();
-    super.onReady();
+  User? getUser() {
+    return _auth.currentUser;
   }
+
+
+  Future<void> logOut() async{
+    _logger.d("Sign out");
+    try{
+      await _auth.signOut();
+      navigateToHome();
+    }on FirebaseAuthException catch(error){
+      debugPrint("Failed to Sign Out $error");
+      _logger.e("Error while sign out: $error");
+
+    }
+  }
+
+
+
+
 }

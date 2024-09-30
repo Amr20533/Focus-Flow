@@ -24,7 +24,7 @@ class LoginScreen extends GetView<AuthController> {
               Image.asset(AppAssets.logoSplash, width: 200,height: 200,),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: AppDimensions.getHeight(50), horizontal: AppDimensions.getWidth(30)),
-                child: Text("This is a study app. You can see what you want, You have the full access to all the materials in the course",
+                child: Text("explore".tr,
                 style: TextStyle(
                   color: onSurfaceTextColor,
                   fontWeight: FontWeight.bold,
@@ -33,13 +33,7 @@ class LoginScreen extends GetView<AuthController> {
               ),
               GestureDetector(
                 onTap: (){
-                  try{
-                    controller.signInWithGoogle();
-                    debugPrint("Logged in");
-                    Get.offAllNamed(AppRoutes.onBoarding);
-                  }catch(error){
-                    debugPrint("An Error occurred while log in!!");
-                  }
+                  controller.signInWithGoogle();
                 },
                 child: Container(
                   width: AppDimensions.getWidth(320),
@@ -53,7 +47,7 @@ class LoginScreen extends GetView<AuthController> {
                     children: [
                       SvgPicture.asset(AppAssets.google),
                       const Spacer(),
-                      Text("Sign in with Google", style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Theme.of(context).primaryColor, fontSize: AppDimensions.getWidth(20)),),
+                      Text("sign-in".tr, style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Theme.of(context).primaryColor, fontSize: AppDimensions.getWidth(20)),),
                       const Spacer(),
                     ],
                   ),

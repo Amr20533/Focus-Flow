@@ -33,8 +33,8 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCS49ctyQqXUbJfFcT3xzg_rbY8nCrf8aU',
-    appId: '1:1076599407396:web:02fef083a3f1c2d827e9b1',
-    messagingSenderId: '1076599407396',
+    appId: '1:462380245979:android:cb0111c150010ba4827dfe',
+    messagingSenderId: '462380245979',
     projectId: 'focusflow-cbe66',
     authDomain: 'focusflow-cbe66.firebaseapp.com',
     // storageBucket: 'focusflow-cbe66.appspot.com',
@@ -43,8 +43,8 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCS49ctyQqXUbJfFcT3xzg_rbY8nCrf8aU',
-    appId: '1:1076599407396:android:da6b1acc21b920a627e9b1',
-    messagingSenderId: '1076599407396',
+    appId: '1:462380245979:android:cb0111c150010ba4827dfe',
+    messagingSenderId: '462380245979',
     projectId: 'focusflow-cbe66',
     storageBucket: 'focusflow-cbe66.appspot.com',
   );
@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCS49ctyQqXUbJfFcT3xzg_rbY8nCrf8aU',
     appId: '1:462380245979:android:cb0111c150010ba4827dfe',
-    messagingSenderId: '1076599407396',
+    messagingSenderId: '462380245979',
     projectId: 'focusflow-cbe66',
     storageBucket: 'focusflow-cbe66.appspot.com',
     iosClientId: '1076599407396-7me650oi63d06l2u373ravhcd2vksiph.apps.googleusercontent.com',
@@ -62,7 +62,7 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyCS49ctyQqXUbJfFcT3xzg_rbY8nCrf8aU',
     appId: '1:462380245979:android:cb0111c150010ba4827dfe',
-    messagingSenderId: '1076599407396',
+    messagingSenderId: '462380245979',
     projectId: 'focusflow-cbe66',
     storageBucket: 'focusflow-cbe66.appspot.com',
     iosClientId: '1076599407396-7me650oi63d06l2u373ravhcd2vksiph.apps.googleusercontent.com',

@@ -5,5 +5,22 @@ Map<String,String> fr = {
   "want-learn": "Que veux-tu apprendre aujourd'hui ?",
   "min": "minutes",
   "questions": "Questions",
-  "answers": "Réponses"
+  "answers": "Réponses",
+  "sign-in": "Se connecter avec Google",
+  "logout": "Se déconnecter",
+  "web": "Site Web",
+  "email": "Email",
+  "git": "Github",
+  "settings": "Paramètres",
+  "lang": "Langue de l'application",
+  "ar": "Arabe",
+  "sp": "Espagnol",
+  "du": "Allemand",
+  "ja": "Japonais",
+  "fr": "Français",
+  "tr": "Turc",
+  "app-mode": "Mode sombre",
+  "profile": "Profil",
+  "explore": "Explorez et accédez à tous les supports de cours à votre portée. Profitez d'une liberté totale pour découvrir ce dont vous avez besoin pour votre parcours d'apprentissage !"
+
 };

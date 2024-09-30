@@ -18,8 +18,8 @@ class AppAssets{
   static const String menu = '$iconPath/menu.svg';
   static const String logout = '$iconPath/logout.svg';
   static const String google = '$iconPath/google.svg';
-  static const String gmail = '$iconPath/google.svg';
-  static const String github = '$iconPath/email.svg';
+  static const String email = '$iconPath/email.svg';
+  static const String github = '$iconPath/github.svg';
   static const String contact = '$iconPath/contact.svg';
   static const String code = '$iconPath/code.svg';
 
