@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -11,6 +13,11 @@ class QuestionsController extends GetxController {
   late QuestionPaperModel questionPaperModel;
   final allQuestions = <Questions>[];
   Rxn<Questions> currentQuestion = Rxn<Questions>();
+  int _seconds = 0;
+
+  int get seconds => _seconds;
+
+  late Timer timer;
 
   PageController pageController = PageController();
   RxInt currentPage = 0.obs;
@@ -20,12 +27,26 @@ class QuestionsController extends GetxController {
     super.onReady();
     final arguments = Get.arguments;
     if (arguments is QuestionPaperModel) {
-      debugPrint("Qest ppr Id::: ${arguments.id}");
+      debugPrint("Question ppr Id::: ${arguments.id}");
       getQuestions(arguments);
     } else {
       debugPrint("Error: No valid QuestionPaperModel provided.");
-      loadStatus.value = LoadStatus.error; // Handle error case
+      loadStatus.value = LoadStatus.error;
     }
+    timer = Timer.periodic(const Duration(seconds: 1), (_) {
+      if (_seconds > 0) {
+        _seconds--;
+        update();
+      } else {
+        timer.cancel();
+      }
+    });
+  }
+
+
+  set seconds(int newSeconds){
+    _seconds = newSeconds;
+    update();
   }
 
   Future<void> getQuestions(QuestionPaperModel paperModel) async {
@@ -93,6 +114,12 @@ class QuestionsController extends GetxController {
       duration: const Duration(milliseconds: 300),
       );
     }
+  }
+
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
   }
 
 }
