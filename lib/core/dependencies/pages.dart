@@ -1,6 +1,7 @@
 import 'package:focus_flow/Layouts/views/auth/login_screen.dart';
 import 'package:focus_flow/Layouts/views/main/home_layout.dart';
 import 'package:focus_flow/Layouts/views/main/question_paper_screen.dart';
+import 'package:focus_flow/Layouts/views/quizzes/completed_quiz_screen.dart';
 import 'package:focus_flow/Layouts/views/splash/intro_screen.dart';
 import 'package:focus_flow/Layouts/views/splash/splash_screen.dart';
 import 'package:focus_flow/core/controllers/auth_controller.dart';
@@ -23,7 +24,14 @@ List<GetPage<dynamic>> pages = [
           // Get.put(AuthController());
         })
     ),
+
+    /// Quizzes
     GetPage(name: AppRoutes.questionScreen, page: () => QuestionPaperScreen(),
+        binding: BindingsBuilder((){
+          Get.put(QuestionsController());
+        })
+    ),
+    GetPage(name: AppRoutes.completedQuiz, page: () => CompletedQuizScreen(),
         binding: BindingsBuilder((){
           Get.put(QuestionsController());
         })

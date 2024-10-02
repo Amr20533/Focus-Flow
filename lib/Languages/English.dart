@@ -23,4 +23,5 @@ Map<String,String> en = {
   "app-mode" : "Dark Mode",
   "profile" : "Profile",
   "explore" : "Explore and access all the course materials at your fingertips. Enjoy complete freedom to discover what you need for your learning journey!",
+  "next" : "Next"
 };

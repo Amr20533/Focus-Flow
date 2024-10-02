@@ -21,6 +21,8 @@ Map<String,String> fr = {
   "tr": "Turc",
   "app-mode": "Mode sombre",
   "profile": "Profil",
-  "explore": "Explorez et accédez à tous les supports de cours à votre portée. Profitez d'une liberté totale pour découvrir ce dont vous avez besoin pour votre parcours d'apprentissage !"
+  "explore": "Explorez et accédez à tous les supports de cours à votre portée. Profitez d'une liberté totale pour découvrir ce dont vous avez besoin pour votre parcours d'apprentissage !",
+  "next": "Suivant"
+
 
 };

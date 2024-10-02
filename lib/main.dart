@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:focus_flow/Layouts/views/main/data_uploader_screen.dart';
 import 'package:focus_flow/Layouts/views/splash/splash_screen.dart';
+import 'package:focus_flow/core/controllers/question_papers/uploading_data.dart';
 import 'package:focus_flow/core/controllers/theme_controller.dart';
 import 'package:focus_flow/core/dependencies/bindings.dart';
 import 'package:focus_flow/core/dependencies/pages.dart';
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    // Get.find<UploadingData>();
     return GetMaterialApp(
       locale: const Locale("du"),
       title: 'Focus Flow',

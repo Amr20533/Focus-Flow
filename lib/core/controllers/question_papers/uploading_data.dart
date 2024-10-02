@@ -55,10 +55,11 @@ class UploadingData extends GetxController {
           batch.set(questionPath, {
             'question': question.question,
             'correct_answer': question.correctAnswer,
-            'answers': question.answers.map((a) => {
+            'selected_answer': '',
+            'answers': question.answers?.map((a) => {
               'identifier': a.identifier,
-              'answer': a.answer
-            }).toList(),
+              'answer': a.answer,
+            }).toList() ?? [],
           });
         }
       }

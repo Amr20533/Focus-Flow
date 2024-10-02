@@ -21,6 +21,7 @@ Map<String,String> tr = {
   "en": "İngilizce",
   "app-mode": "Karanlık Mod",
   "profile": "Profil",
-  "explore": "Tüm kurs materyallerine parmaklarınızın ucundan erişin. Öğrenme yolculuğunuz için ihtiyaç duyduğunuz her şeyi keşfetmekte tam özgürlüğün tadını çıkarın!"
+  "explore": "Tüm kurs materyallerine parmaklarınızın ucundan erişin. Öğrenme yolculuğunuz için ihtiyaç duyduğunuz her şeyi keşfetmekte tam özgürlüğün tadını çıkarın!",
+  "next": "Sonraki"
 
 };

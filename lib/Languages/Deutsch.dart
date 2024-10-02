@@ -21,5 +21,7 @@ Map<String,String> du = {
   "tr": "Türkisch",
   "app-mode": "Dunkelmodus",
   "profile": "Profil",
-  "explore": "Entdecken Sie alle Kursmaterialien, die Ihnen zur Verfügung stehen. Genießen Sie die volle Freiheit, das zu entdecken, was Sie für Ihre Lernreise benötigen!"
+  "explore": "Entdecken Sie alle Kursmaterialien, die Ihnen zur Verfügung stehen. Genießen Sie die volle Freiheit, das zu entdecken, was Sie für Ihre Lernreise benötigen!",
+  "next": "Weiter"
+
 };

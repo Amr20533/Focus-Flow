@@ -13,14 +13,18 @@ class QuestionsController extends GetxController {
   late QuestionPaperModel questionPaperModel;
   final allQuestions = <Questions>[];
   Rxn<Questions> currentQuestion = Rxn<Questions>();
-  int _seconds = 0;
+  int _remainingSeconds = 1;
 
-  int get seconds => _seconds;
+  int get remainingSeconds => _remainingSeconds;
 
-  late Timer timer;
+  final quizTime = "00:00".obs;
+  Timer? timer;
 
   PageController pageController = PageController();
-  RxInt currentPage = 0.obs;
+  RxInt questionPage = 0.obs;
+  // RxInt selectedAnswer = 0.obs;
+
+  bool get isFirstQues => questionPage.value > 0;
 
   @override
   void onReady() {
@@ -33,19 +37,11 @@ class QuestionsController extends GetxController {
       debugPrint("Error: No valid QuestionPaperModel provided.");
       loadStatus.value = LoadStatus.error;
     }
-    timer = Timer.periodic(const Duration(seconds: 1), (_) {
-      if (_seconds > 0) {
-        _seconds--;
-        update();
-      } else {
-        timer.cancel();
-      }
-    });
   }
 
 
   set seconds(int newSeconds){
-    _seconds = newSeconds;
+    _remainingSeconds = newSeconds;
     update();
   }
 
@@ -62,27 +58,21 @@ class QuestionsController extends GetxController {
 
       final questions = querySnapshot.docs.map((question) => Questions.fromSnapshot(question)).toList();
       paperModel.questions = questions;
-
       // Fetch all answers for the questions in one go
       for (Questions q in questions) {
-        final answerQuery = await questionPaperRF
-            .doc(paperModel.id)
-            .collection("questions")
-            .doc(q.id)
-            .collection("answers")
-            .get();
-
-        final answers = answerQuery.docs.map((answer) => Answers.fromSnapshot(answer)).toList();
-        q.answers = answers; // Assign fetched answers to the question
+        final answers = q.answers!.map((answer) => Answers.fromJson(answer.toJson())).toList();
+        q.answers = answers;
       }
 
-      if (questions.isNotEmpty) {
-        allQuestions.addAll(questions);
-        currentQuestion.value = questions.first;
+      if (paperModel.questions != null && paperModel.questions!.isNotEmpty) {
+        allQuestions.addAll(paperModel.questions!);
+        currentQuestion.value = paperModel.questions![0];
+        _startTime(paperModel.timeSeconds);
         loadStatus.value = LoadStatus.complete;
 
         if (kDebugMode) {
           print(questions.first.question);
+          print('Answers Length --> ${questions[0].answers?.length}');
         }
       } else {
         loadStatus.value = LoadStatus.error;
@@ -96,29 +86,49 @@ class QuestionsController extends GetxController {
     }
   }
 
-  void nextPage(){
-    if(currentPage.value < questionPaperModel.questionCount){
-      currentPage.value ++;
-      pageController.animateToPage(currentPage.value,
-      curve: Curves.linear,
-      duration: const Duration(milliseconds: 300),
-      );
-    }
+  void selectedAnswer(String? answer){
+    currentQuestion.value!.selectedAnswer = answer;
+    update(['user_answers']);
   }
 
-  void previousPage(){
-    if(currentPage.value < 0){
-      currentPage.value --;
-      pageController.previousPage(
-      curve: Curves.linear,
-      duration: const Duration(milliseconds: 300),
-      );
+  void nextQuestion(){
+    if(questionPage.value >= allQuestions.length - 1){
+      return;
     }
+    questionPage.value ++;
+    currentQuestion.value = allQuestions[questionPage.value];
+    update();
+    debugPrint('${currentQuestion.value}');
   }
+  void previousQuestion(){
+    if(questionPage.value <= 0){
+      return;
+    }
+    questionPage.value --;
+    currentQuestion.value = allQuestions[questionPage.value];
+    update();
+  }
+
+  _startTime(int seconds){
+    const duration = Duration(seconds: 1);
+    _remainingSeconds = seconds;
+    timer = Timer.periodic(duration, (Timer t) {
+      if (_remainingSeconds > 0) {
+        int minutes = _remainingSeconds ~/ 60;
+        int secs = _remainingSeconds  % 60;
+        quizTime.value = "${minutes.toString().padLeft(2, "0")}:${secs.toString().padLeft(2, "0")}";
+        _remainingSeconds --;
+      } else {
+        quizTime.value = "00:00";
+        timer!.cancel();
+      }
+    });  }
+
+
 
   @override
   void dispose() {
-    timer.cancel();
+    timer!.cancel();
     super.dispose();
   }
 

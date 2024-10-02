@@ -64,36 +64,44 @@ class Questions {
     required this.id,
     required this.question,
     required this.answers,
+    this.selectedAnswer,
     this.correctAnswer,
   });
 
   String id;
   String question;
-  List<Answers> answers;
+  List<Answers>? answers;
+  String? selectedAnswer;
   String? correctAnswer;
 
   Questions.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         question = json['question'],
-        answers = (json['answers'] as List<dynamic>)
-            .map((e) => Answers.fromJson(e as Map<String, dynamic>))
-            .toList(),
+        answers = (json['answers'] as List<dynamic>?)
+            ?.map((dynamic e) => Answers.fromJson(e as Map<String, dynamic>))
+            .toList() ?? [],
+        selectedAnswer = json['selected_answer'],
         correctAnswer = json['correct_answer'];
 
-    Questions.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
-        : id = json.id,
-          answers = (json['answers'] as List<dynamic>)
-              .map((e) => Answers.fromJson(e as Map<String, dynamic>))
-              .toList(),
-          question = json['question'],
-          correctAnswer = json['correct_answer'];
+  Questions.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
+      : id = json.id,
+        question = json['question'],
+        selectedAnswer = json['selected_answer'],
+        correctAnswer = json['correct_answer'],
+        answers = (json['answers'] as List<dynamic>?)
+            ?.map((e) => Answers.fromJson(e as Map<String, dynamic>))
+            .toList() ?? [];
+
 
 
   Map<String, dynamic> toJson() {
     final _data = <String, dynamic>{};
     _data['id'] = id;
     _data['question'] = question;
-    _data['answers'] = answers.map((e) => e.toJson()).toList();
+    if (answers != null) {
+      _data['answers'] = answers!.map((e) => e.toJson()).toList();
+    }
+    _data['selected_answer'] = selectedAnswer;
     _data['correct_answer'] = correctAnswer;
     return _data;
   }
@@ -110,17 +118,17 @@ class Answers {
 
   Answers.fromJson(Map<String, dynamic> json)
       : identifier = json['identifier'],
-        answer = json['Answer'];
+        answer = json['answer'];
 
 
   Answers.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
       : identifier = json['identifier'],
-        answer = json['Answer'];
+        answer = json['answer'];
 
   Map<String, dynamic> toJson() {
     final _data = <String, dynamic>{};
     _data['identifier'] = identifier;
-    _data['Answer'] = answer;
+    _data['answer'] = answer;
     return _data;
   }
 }
