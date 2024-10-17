@@ -34,7 +34,7 @@ class HomeHeader extends GetView<HomeZoomController> {
               ],
             ),
           ),
-          Text("want-learn".tr, style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: Colors.white),),
+          Text("want-learn".tr, style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: Colors.white, fontSize: 22),),
 
         ],
       ),

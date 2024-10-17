@@ -14,7 +14,7 @@ Map<String,String> fr = {
   "settings": "Paramètres",
   "lang": "Langue de l'application",
   "ar": "Arabe",
-  "sp": "Espagnol",
+  "es": "Espagnol",
   "du": "Allemand",
   "ja": "Japonais",
   "fr": "Français",
@@ -22,7 +22,16 @@ Map<String,String> fr = {
   "app-mode": "Mode sombre",
   "profile": "Profil",
   "explore": "Explorez et accédez à tous les supports de cours à votre portée. Profitez d'une liberté totale pour découvrir ce dont vous avez besoin pour votre parcours d'apprentissage !",
-  "next": "Suivant"
-
+  "next": "Suivant",
+  "out": "Sur",
+  "ans": "Répondu",
+  "q": "Question",
+  "congrats": "Félicitations",
+  "got": "vous avez",
+  "pts": "Points",
+  "view_ans": "Appuyez sur les numéros de questions pour voir les bonnes réponses",
+  "go_home": "Retour à l'accueil",
+  "rem": "Restant",
+  "complete": "Compléter"
 
 };

@@ -1,5 +1,5 @@
 import 'package:focus_flow/Layouts/views/main/home_layout.dart';
-import 'package:focus_flow/Layouts/widgets/circle_button.dart';
+import 'package:focus_flow/Layouts/widgets/home/circle_button.dart';
 import 'package:focus_flow/utils/themes/colors.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';

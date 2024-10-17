@@ -14,7 +14,7 @@ Map<String,String> tr = {
   "settings": "Ayarlar",
   "lang": "Uygulama Dili",
   "ar": "Arapça",
-  "sp": "İspanyolca",
+  "es": "İspanyolca",
   "du": "Almanca",
   "ja": "Japonca",
   "fr": "Fransızca",
@@ -22,6 +22,17 @@ Map<String,String> tr = {
   "app-mode": "Karanlık Mod",
   "profile": "Profil",
   "explore": "Tüm kurs materyallerine parmaklarınızın ucundan erişin. Öğrenme yolculuğunuz için ihtiyaç duyduğunuz her şeyi keşfetmekte tam özgürlüğün tadını çıkarın!",
-  "next": "Sonraki"
+  "next": "Sonraki",
+  "out": "İçinden",
+  "ans": "Cevaplandı",
+  "q": "Soru",
+  "congrats": "Tebrikler",
+  "got": "aldın",
+  "pts": "Puan",
+  "view_ans": "Doğru cevapları görmek için soru numaralarına dokunun",
+  "go_home": "Ana sayfaya dön",
+  "rem": "Kalan",
+  "complete": "Tamamla"
+
 
 };

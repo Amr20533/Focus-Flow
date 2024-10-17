@@ -1,4 +1,5 @@
 import 'package:focus_flow/core/controllers/auth_controller.dart';
+import 'package:focus_flow/core/controllers/language_controller.dart';
 import 'package:focus_flow/core/controllers/question_papers/questions_controller.dart';
 import 'package:focus_flow/core/controllers/question_papers/uploading_data.dart';
 import 'package:focus_flow/core/controllers/theme_controller.dart';
@@ -11,6 +12,7 @@ class InitBinding implements Bindings{
   void dependencies(){
     // Get.put(UploadingData());
     Get.put(ThemeController());
+    Get.put(LanguageController());
     Get.put(HomeZoomController());
     // Get.put(QuestionsController());
     Get.lazyPut(() => FirebaseStorageService());

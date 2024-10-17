@@ -1,11 +1,12 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:focus_flow/Layouts/views/quizzes/check_answer_screen.dart';
 import 'package:focus_flow/core/dependencies/firebase_ref.dart';
 import 'package:focus_flow/models/question_paper_model.dart';
 import 'package:focus_flow/utils/config/load_status.dart';
+import 'package:focus_flow/utils/static/routes.dart';
 import 'package:get/get.dart';
 
 class QuestionsController extends GetxController {
@@ -20,11 +21,11 @@ class QuestionsController extends GetxController {
   final quizTime = "00:00".obs;
   Timer? timer;
 
-  PageController pageController = PageController();
   RxInt questionPage = 0.obs;
   // RxInt selectedAnswer = 0.obs;
 
   bool get isFirstQues => questionPage.value > 0;
+  bool get isLastQuestion => allQuestions.length -1 == questionPage.value;
 
   @override
   void onReady() {
@@ -69,7 +70,6 @@ class QuestionsController extends GetxController {
         currentQuestion.value = paperModel.questions![0];
         _startTime(paperModel.timeSeconds);
         loadStatus.value = LoadStatus.complete;
-
         if (kDebugMode) {
           print(questions.first.question);
           print('Answers Length --> ${questions[0].answers?.length}');
@@ -122,7 +122,38 @@ class QuestionsController extends GetxController {
         quizTime.value = "00:00";
         timer!.cancel();
       }
-    });  }
+    });
+  }
+
+  String get completeQuiz{
+    final answered = allQuestions.where((question) => question.selectedAnswer != null && question.selectedAnswer!.isNotEmpty).toList().length;
+    debugPrint('Total questions: ${allQuestions.length}');
+    debugPrint('Answered $answered');
+    return "$answered ${'out'.tr} ${allQuestions.length} ${'ans'.tr}";
+  }
+
+  String get correctAnswers{
+    final correct = allQuestions.where((question) =>
+    question.selectedAnswer != null &&
+        question.selectedAnswer!.isNotEmpty &&
+        question.selectedAnswer == question.correctAnswer
+    ).toList().length;
+
+    debugPrint('Total questions: ${allQuestions.length}');
+    debugPrint('Correct Answered $correct');
+    return "$correct ${'out'.tr} ${allQuestions.length} ${'ans'.tr}";
+  }
+
+  void complete(){
+    timer!.cancel();
+    Get.offAndToNamed(AppRoutes.finishQuiz);
+  }
+
+
+  void jumpToQuestion({required CheckAnswerScreen page}){
+    Get.toNamed(AppRoutes.checkAnswer, arguments: page);
+  }
+
 
 
 

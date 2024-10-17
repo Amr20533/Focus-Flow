@@ -14,7 +14,7 @@ Map<String,String> du = {
   "settings": "Einstellungen",
   "lang": "App-Sprache",
   "ar": "Arabisch",
-  "sp": "Spanisch",
+  "es": "Spanisch",
   "du": "Deutsch",
   "ja": "Japanisch",
   "fr": "Französisch",
@@ -22,6 +22,16 @@ Map<String,String> du = {
   "app-mode": "Dunkelmodus",
   "profile": "Profil",
   "explore": "Entdecken Sie alle Kursmaterialien, die Ihnen zur Verfügung stehen. Genießen Sie die volle Freiheit, das zu entdecken, was Sie für Ihre Lernreise benötigen!",
-  "next": "Weiter"
+  "next": "Weiter",
+  "out": "Von",
+  "ans": "Beantwortet",
+  "q": "Frage",
+  "congrats": "Herzlichen Glückwunsch",
+  "got": "du hast",
+  "pts": "Punkte",
+  "view_ans": "Tippe auf die Fragenummern, um die richtigen Antworten anzuzeigen",
+  "go_home": "Zurück zur Startseite",
+  "rem": "Verbleibend",
+  "complete": "Vollständig"
 
 };

@@ -14,7 +14,7 @@ Map<String,String> en = {
   "settings" : "Settings",
   "lang" : "App Language",
   "ar" : "Arabic",
-  "sp" : "Spanish",
+  "es" : "Spanish",
   "du" : "German",
   "ja" : "Japanese",
   "fr" : "French",
@@ -23,5 +23,16 @@ Map<String,String> en = {
   "app-mode" : "Dark Mode",
   "profile" : "Profile",
   "explore" : "Explore and access all the course materials at your fingertips. Enjoy complete freedom to discover what you need for your learning journey!",
-  "next" : "Next"
+  "next" : "Next",
+  "out" : "Out of",
+  "ans" : "Answered",
+  "q" : "Q",
+  "congrats" : "Congratulations",
+  "got" : "you've got",
+  "pts" : "Points",
+  "view_ans" : "Tap below question numbers to view correct answers",
+  "go_home" : "Back to home",
+  "rem" : "Remaining",
+  "complete" : "Complete",
+
 };

@@ -15,6 +15,8 @@ class AppAssets{
   static const String web = '$iconPath/web.svg';
   static const String peace = '$iconPath/peace.svg';
   static const String menuLeft = '$iconPath/menuleft.svg';
+  static const String language = '$iconPath/language.svg';
+  static const String dartMode = '$iconPath/dark-theme.svg';
   static const String menu = '$iconPath/menu.svg';
   static const String logout = '$iconPath/logout.svg';
   static const String google = '$iconPath/google.svg';

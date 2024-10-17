@@ -111,7 +111,7 @@ class AuthController extends GetxController{
     _logger.d("Sign out");
     try{
       await _auth.signOut();
-      navigateToHome();
+      Get.offAllNamed(AppRoutes.home);
     }on FirebaseAuthException catch(error){
       debugPrint("Failed to Sign Out $error");
       _logger.e("Error while sign out: $error");

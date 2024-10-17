@@ -12,7 +12,7 @@ class QuestionScreenBottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  controller.questionPage.value <= 0 ? Padding(
+    return controller.questionPage.value <= 0 ? Padding(
       padding: EdgeInsets.only(bottom: AppDimensions.getHeight(16)),
       child: QuizButton(
           onTap:(){
@@ -37,8 +37,12 @@ class QuestionScreenBottomBar extends StatelessWidget {
             flex: 4,
             child: QuizButton(
                 onTap:(){
-                  controller.nextQuestion();
-                  Get.toNamed(AppRoutes.completedQuiz);
+                  if(controller.isLastQuestion){
+                    Get.toNamed(AppRoutes.completedQuiz);
+
+                  }else{
+                    controller.nextQuestion();
+                  }
                 },
                 title: 'next'.tr),
           ),
